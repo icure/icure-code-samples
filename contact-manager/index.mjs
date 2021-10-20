@@ -41,25 +41,32 @@ const serviceToCreate = await contactApi.service().newInstance(
     new Service({
         valueDate: 20211020,
         status: 0,
-        codes: [new CodeStub({
-            id: 'http://loinc.org|16935-9|0',
-            context: 'code',
-            system: 'http://loinc.org',
-            code: '16935-9',
-            version: '0',
-            display: new Map([['-', 'Hepatitis B virus surface Ab [Units/volume] in Serum']])
-        })],
-        content: new Map([['-', new Content({
-            measureValue: new Measure({
-                value: 99.0,
-                unit: '[iU]/L',
-                unitCodes: [new CodeStub({
-                    id: 'http://unitsofmeasure.org|[iU]/L',
-                    type: 'http://unitsofmeasure.org',
-                    code: '[iU]/L'
-                })]
+        label: 'Hepatitis B virus surface',
+        codes: [
+            new CodeStub({
+                id: 'http://loinc.org|16935-9|2',
+                context: 'code',
+                type: 'http://loinc.org',
+                code: '16935-9',
+                version: '2',
+                label: {
+                    en: 'Hepatitis B virus surface Ab [Units/volume] in Serum'
+                }
             })
-        })]])
+        ],
+        content: {
+            en: new Content({
+                measureValue: new Measure({
+                    value: 99.0,
+                    unit: '[iU]/L',
+                    unitCodes: [new CodeStub({
+                        id: 'http://unitsofmeasure.org|[iU]/L',
+                        type: 'http://unitsofmeasure.org',
+                        code: '[iU]/L'
+                    })]
+                })
+            })
+        }
     })
 )
 
@@ -69,7 +76,7 @@ const contact = await contactApi.createContactWithUser(loggedUser,
         patient,
         new Contact({
             responsible: loggedUser.healthcarePartyId,
-            services: [{serviceToCreate}]
+            services: [serviceToCreate]
         }))
 )
 

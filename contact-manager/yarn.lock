@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@icure/api@^4.0.36":
-  version "4.0.71"
-  resolved "https://registry.yarnpkg.com/@icure/api/-/api-4.0.71.tgz#f4ed1f750c25b956962bcf5830963fafceef7130"
-  integrity sha512-xiAQVhST0iW31xpV6j1LvJko5qfhfO15rTZtu69pUynLiXT43SJfIgNU4BbNgbKnrJnFgVRNx8HxgYYLlZH9/g==
+"@icure/api@^4.0.73":
+  version "4.0.73"
+  resolved "https://registry.yarnpkg.com/@icure/api/-/api-4.0.73.tgz#c67350087124c4b98271ab361bcb163eb1106ab5"
+  integrity sha512-TKC94K58hsNn1jOcH36mmxSP2bJgIbq7NBgCKfV3+ALhooVdDVTTN02LxLv7IT3Orjn/j3XPtjL/tzDC5BpgiQ==
   dependencies:
     date-fns "^2.23.0"
     libphonenumber-js "^1.7.18"
