@@ -107,7 +107,7 @@ let createdPatient = await fetch(`${host}/rest/fhir/r4/Patient`, {
 console.log(`Created FHIR patient : ${JSON.stringify(createdPatient, null, ' ')}`)
 
 
-//tech-doc Read FHIR Patient
+//tech-doc: Read FHIR Patient
 let fetchedPatient = await fetch(`${host}/rest/fhir/r4/Patient/pat1`, {
     headers: {
         'Content-Type': 'application/json',
@@ -215,7 +215,7 @@ let createdObservation = await fetch(`${host}/rest/fhir/r4/Observation`, {
 console.log(`Created FHIR observation : ${JSON.stringify(createdObservation, null, ' ')}`)
 
 
-//tech-doc: Read Observation
+//tech-doc: Read FHIR Observation
 let fetchedObservation = await fetch(`${host}/rest/fhir/r4/Observation/f001`, {
     headers: {
         'Content-Type': 'application/json',
