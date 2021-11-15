@@ -6,7 +6,7 @@ const {
     userApi,
     healthcarePartyApi,
     cryptoApi
-} = Api(host, 'abdemo', 'knalou', crypto)
+} = Api(host, 'watson', 'correct horse battery staple', crypto)
 
 const user = await userApi.getCurrentUser()
 console.log(user.login)

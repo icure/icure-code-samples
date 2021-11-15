@@ -1,5 +1,15 @@
 {
   "name": "icure-code-samples",
   "private": true,
-  "workspaces": ["introduction", "setup", "login-user-management", "contact-manager", "patient-manager"]
+  "workspaces": [
+    "introduction",
+    "setup",
+    "login-user-management",
+    "contact-manager",
+    "patient-manager",
+    "medtech-fhir"
+  ],
+  "dependencies": {
+    "yarn": "^1.22.17"
+  }
 }
