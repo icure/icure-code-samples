@@ -1,0 +1,5 @@
+{
+  "name": "icure-code-samples",
+  "private": true,
+  "workspaces": ["introduction", "setup", "login-user-management", "contact-manager", "patient-manager"]
+}
