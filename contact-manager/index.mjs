@@ -34,7 +34,6 @@ const patient = await patientApi.createPatientWithUser(loggedUser,
         }))
 )
 
-
 //tech-doc: Create a contact with services
 const serviceToCreate = await contactApi.service().newInstance(
     loggedUser,
@@ -79,7 +78,6 @@ const contact = await contactApi.createContactWithUser(loggedUser,
             services: [serviceToCreate]
         }))
 )
-
 
 //tech-doc: Load a contact by id
 const fetchedContact = await contactApi.getContactWithUser(loggedUser, contact.id)
